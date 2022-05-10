@@ -1,18 +1,350 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* CSS Reset */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.nav {
-    height: 100vh;
-    width: 40vw;
-    align-items: center;
-    border: 1px solid black;
-    background-color: black;
-}
-.nav img {
+
+
+#nav-bar {
+    position: fixed;
+    border: 1px solid;
+    width: 300px;
+    min-height: 100vh;
+    background-color: #040B14;
+  }
+  .female {
+    display: block;
+    width: 120px;
+    aspect-ratio: 1;
     border-radius: 100%;
-    width: 100px;
-    background-image: url(./images/Chanique.JPG);
-}
+    border: 8px solid #2C2F3F;
+    object-fit: cover;
+  }
+  #nav-bar h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 16px 0px 0px;
+  }
+  .socials i:hover {
+    background-color: #149DDD;
+  }
+  .socials i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #2C2F3F;
+    border-radius: 50%;
+    background-color: #212431;
+    font-size: 18px;
+    margin-right: 10px;
+    color: white;
+    width: 36px;
+    height: 36px;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10%;
+    padding: 10px 0px 0px;
+    font-family: "Open Sans", sans-serif;
+    
+  }
+  ul i {
+    font-size: 24px;
+  }
+  .nav-link {
+    list-style: none;
+    font-size: 15px;
+    padding: 30px 0px 0px;
+    
+  }
+  a {
+    text-decoration: none !important;
+    color: #A8A9B4;
+  } 
+  a.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  li:hover > a {
+    color: white;
+  }
+  li:hover > a > i {
+    color: #149DDD;
+  }
+  li:visited > a {
+    color: white;
+  }
+  li:visited > a > i {
+    color: #149DDD;
+  }
+  li:focus > a {
+    color: white;
+  }
+  li:focus > a > i {
+    color: #149DDD;
+  }
+  .btn-primary {
+    right: 30px;
+    position: fixed;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #149DDD;
+    color: white;
+  }
+  
+ #content {
+     margin-left: 310px;
+ }
+
+ 
+
+  #landing{
+      background-image: url(./images/landing-port.gif);
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+     }
+    
+     .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: blue;
+        text-shadow: 1px 3px 4px white;
+        font-family: 'Lobster', cursive;    
+     }
+
+     .text h1 {
+        font-size: 70px;
+     }
+  
+     .text h2 {
+         font-size: 40px;
+     }
+
+     #about{
+         background-image: url(./images/landing.jpg);
+         background-size: cover;
+         height: 100vh;
+         width: 100%;
+         display: flex;
+         align-items: center;
+
+
+     }
+
+     .about-title > h2 {
+         justify-content: center;
+         align-items: center;
+     }
+  
+     .nikkie {
+         height: 300px !important;;
+         width: 300px;
+         float: right;
+     }
+
+     #resume{
+         background-image: url(./images/landing.jpg);
+         background-size: cover;
+         height: 100vh;
+         width: 100%;
+     }
+     .section title h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding-bottom:15px;
+        position: relative;
+        color: purple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header{
+        font-size: 20px;
+        color: white;
+    }
+    
+    .section title p{
+        color: purple;
+    }
+    
+    
+    .section-title h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        position: relative;
+        color: purple;
+        text-shadow: 2px 3px 8px solid black;
+        font-family: "Playfair Display",serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    
+    
+    
+    
+    
+    
+    .timelines {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: transparent;
+    }
+    
+    .timeline-title {
+      font-size: 1em;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .timeline-item {
+      margin-bottom: 2em;
+    }
+    .timeline-item h3 {
+      font-size: 1em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      position: relative;
+    }
+    .timeline-item h3::before {
+      content: "";
+      position: absolute;
+      left: -2.35em;
+      background-color: blue;
+      width: 0.7em;
+      height: 0.7em;
+      border-radius: 50%;
+      transform: translate(-0.5px, 0.2em);
+    }
+    
+    .timeline-items {
+      margin: 2em;
+      padding: 0.01em 0 3em 2em;
+      border-left: 1px solid blue;
+    }
+    
+    .timeline-item {
+      margin-top: -0.3em;
+      background-color:lightgray;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .timeline-item time {
+      display: block;
+      float: left;
+      background-color:#c2c1c2;
+      padding: 0.2em 0.4em;
+    }
+    .timeline-item > * {
+      margin: 1em 0;
+    }
+    .timeline-item .location {
+      clear: both;
+      font-size: 0.85em;
+      font-style: italic;
+    }
+
+    
+
+
+    #skills{
+        background-image: url(./images/landing.jpg);
+        background-size: cover;
+         height: 100vh;
+         width: 100%;
+    }
+
+
+
+    .skills-title{
+        display:flex;
+        justify-content: space-between;
+        color:blue;
+    }
+
+    .Skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+
+    h2{
+        color:blue;
+        
+    }
+    
+    .skills-col{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    meter{
+        width: 100%;
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+     @media (max-width:565px) {
+         .text h1{
+             font-size: 20px;
+         }
+         .text h2{
+             font-size: 20px;
+         }
+
+         
+     }
+  
+  
+  
+  

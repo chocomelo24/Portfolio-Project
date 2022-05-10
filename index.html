@@ -5,40 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Portfolio</title>
-    <link rel="stylesheet" href="stylesheets.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets.css">
 
 </head>
-<body>
-    <nav class="nav flex-column">
-       <div class="nav-img d-flex flex-column align-items-center justify-content-center">
-        <img class="mb-2" src="./images/Chanique.JPG" alt="">
-        <h6>Chanique Mansoor</h6>
-        <p>-----</p>
-       </div>
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#resume">Resume</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#testimonials">Testimonials</a>
-        <a class="nav-link mb-3" href="#contacts">Contacts</a>
-        <div class="colorlib-footer mx-2">
-                    <p>©
-                    Copyright 2022 All rights reserved.</p>
-                    <p>Made by Chanique Mansoor</p>
+<body >
+    <!-- Start of navbar -->
+    <nav id="nav-bar">
+        <img
+        src="./images/Chanique.JPG"
+        alt=""
+        class="female m-auto img-fluid"
+        />
+        <h1 class="name">Chanique Mansoor</h1>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/chanique-mansoor-235a83237/"><i class="fa-brands fa-linkedin"></a></i>
+            <a href="https://github.com/chocomelo24"><i class="fa-brands fa-github"></i></a>
+            <a href="https://app.netlify.com/teams/mansoorchanique/overview?_ga=2.68972633.99398783.1652165200-1667476014.1652165200"><i class='bx bxl-netlify'></i></a>
+        </div>
+        <ul class="nav-links ">
+            <li class="nav-link">
+                <a href="#landing" class="link"><i class="bx bx-home"></i>Home</a>
+            </li>
+            <li class="nav-link">
+            <a href="#about" class="link"><i class="bx bx-user"></i>About</a>
+        </li>
+        <li class="nav-link">
+            <a href="#resume" class="link"
+            ><i class="bx bx-file-blank"></i>Resume</a
+            >
+            <li class="nav-link">
+                <a href="#skills" class="link"
+                ><i class="fa-solid fa-bars-progress"></i>Skills</a
+                >
+            </li>
+        </li>
+        <li class="nav-link">
+            <a href="#portfolio" class="link"
+            ><i class="bx bx-book-content"></i>Portfolio</a
+            >
+        </li>
+        <li class="nav-link">
+            <a href="#testimonials" class="link"
+            ><i class="fa-solid fa-comment-dots"></i>Testimonials</a
+            >
+        </li>
+        <li class="nav-link">
+            <a href="#contact" class="link"
+            ><i class="bx bx-envelope"></i>Contact</a
+            >
+        </li>
+    </ul>
+    <footer>
+        <p><small>© 
+            Copyright 2022 All rights reserved. Made  by Chanique Mansoor</small></p>
+        </footer>
+    </nav>
+    <main id="content">
+        <section class="min-vh-100" id="landing">
+            <div class="text">
+        <h1 data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">Hello There, I'm Chanique</h1>
+        <h2>An Aspiring Web Developer</h2>
+            </div>
+        </section>
+
+
+
+        <section class="min-vh-100 mt-3" id="about">
+            <div class="container-fluid">
+            <div class="row">
+            <div  data-aos="fade-left" class="about-title col-md-6 text-center ">
+                <div data-aos="fade-up-left">
+                    <h2>About me</h2>
+                </div>
+                <div class="mt-4">
+                    <h3>Bio</h3>
+I like to describe myself as an extroverted - introvert, someone who loves outgoing yet reserved and humbled. I love gaining new experiences and exploring every aspect of life. I've always wanted to do coding because I was intrigued by how websites work and interested in how applications are developed.
+I became interested in coding at a young age. I would try and fiddle around trying to figure out how certain codes made up certain websites. After I matriculated in 2019 I went to study IT and it wasn't really what I wanted to do. A few years later after working in different career fields, I came across Life Choices Academy and their coding course. I immediately knew I had to apply after doing research on their curriculum and what I could expect, it was exactly what I had been wanting to learn all this time. I am learning new things every day and it's fascinating especially CSS because I love the styling aspect. I  appreciate that I got an opportunity to study at the Academy.
+                </div>
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+              <div class="img d-flex justify-content-center mb-5"><img src="./images/Chanique.JPG" alt="Me" class="nikkie img-fluid rounded-circle"></div> 
+              <div data-aos="fade-up-left" class="passion d-flex flex-column text-center justify-content-center"><h4>Passion Board</h4>
+                singing, dancing, soccer, karate, judo, reading, song-writing, gaming, hiking, photography.
+                
+                </div>
+               </div>
+              
+        </div>
+    </div>
+        </section>
+        <section class="min-vh-100 " id="resume">
+            <h3>Resume</h3>
+            <div class="timelines">
+                 </div>
+                 <div class="timeline education">
+                   <h2 class="timeline-title">Education</h2>
+                   <div class="timeline-items">
+                          <div class="timeline-item">
+                            <h3>Matric</h3>
+                            <time datetime="2017/2019">2019</time>
+                            <div class="location">Phoenix Senior Secondary High School</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="timeline experience">
+                        <h2 class="timeline-title">Experience</h2>
+                        <div class="timeline-items">
+                          <div class="timeline-item">
+                            <h3>Teachers Assistant</h3>
+                            <time datetime="2020/2022">2020-2021 &ndash; Present</time>
+                            <div class="location">Little Bugs Educare</div>
+                          </div>
+                          <div class="timeline-item">
+                            <h3>Hostess</h3>
+                            <time datetime="2019/2020">2019 &ndash; 2020</time>
+                            <div class="location">Wimpy, Cape Town</div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      
+                    </div>
+        </section>
+
+
+
+        <section class="min-vh-100 " id="skills">
+            <div class="Skills">
+                <h2>Skills</h2>
+                <p></p>
+                <div class="skills-col">
+                    <div class="skills-title">
+                      <h3>HTML 70%</h3>
+                        <p>100%</p>
+                      </div>
+                    <meter value="70" min="0" max="100">2 out of 10</meter>
+    
+                  </div>
+                <div class="skills-col">
+                    <div class="skills-title">
+                      <h3>CSS 50%</h3>
+                      <p>100%</p>
+                    </div>
+                    <meter value="50" min="0" max="100">2 out of 10</meter>
+    
+                </div>
+                <div class="skills-col">
+                    <div class="skills-title">
+                        <h3>Javascript 20%</h3>
+                        <p>100%</p>
+                      </div>
+                      <meter value="20" min="0" max="100">2 out of 10</meter>
+    
+                    </div>
+                <div class="skills-col">
+                    <div class="skills-title">
+                      <h3>VUE 20%</h3>
+                      <p>100%</p>
+                    </div>
+                    <meter value="20" min="0" max="100">2 out of 10</meter>
+                    
+                </div>
+                <div class="skills-col">
+                  <div class="skills-title">
+                    <h3>Node 20%</h3>
+                        <p>100%</p>
+                 </div>
+                    <meter value="20" min="0" max="100">2 out of 10</meter>
+    
+                  </div>
+                <div class="skills-col">
+                    <div class="skills-title">
+                      <h3>Data basis 20%</h3>
+                        <p>100%</p>
+                      </div>
+                      <meter value="20" min="0" max="100">2 out of 10</meter>
+    
                 </div>
                 
-      </nav>
-      
+    
+              </div>
+        </section>
+
+
+
+        <section class="min-vh-100 " id="portfolio"></section>
+        <section class="min-vh-100 " id="testimonials"></section>
+        <section class="min-vh-100 " id="contact"></section>
+    
+    
+    
+    
+    
+    
+    
 
 
 
 
-
-
-
-
+    </main>
+    <script src="https://kit.fontawesome.com/2093f2a112.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
