@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="stylesheets.css">
 
 </head>
-<body >
+<body style="overflow-x: hidden;">
     <!-- Start of navbar -->
     <nav id="nav-bar">
         <img
@@ -21,9 +21,9 @@
         />
         <h1 class="name">Chanique Mansoor</h1>
         <div class="socials">
-            <a href="https://www.linkedin.com/in/chanique-mansoor-235a83237/"><i class="fa-brands fa-linkedin"></a></i>
-            <a href="https://github.com/chocomelo24"><i class="fa-brands fa-github"></i></a>
-            <a href="https://app.netlify.com/teams/mansoorchanique/overview?_ga=2.68972633.99398783.1652165200-1667476014.1652165200"><i class='bx bxl-netlify'></i></a>
+            <a href="https://www.linkedin.com/in/chanique-mansoor-235a83237/" target="_blank"><i class="fa-brands fa-linkedin"></a></i>
+            <a href="https://github.com/chocomelo24"><i class="fa-brands fa-github" target="_blank"></i></a>
+            <a href="https://app.netlify.com/teams/mansoorchanique/overview?_ga=2.68972633.99398783.1652165200-1667476014.1652165200" target="_blank"><i class='bx bxl-netlify'></i></a>
         </div>
         <ul class="nav-links ">
             <li class="nav-link">
@@ -78,9 +78,9 @@
 
 
     <!--Start of About-->
-        <section class="min-vh-100 mt-3" id="about">
+        <section class="mt-3" id="about">
             <div class="container-fluid">
-            <div class="row">
+            <div class="row flex-sm-column flex-md-row">
             <div  data-aos="fade-left" class="about-title col-md-6 text-center ">
               <div class="card">
                 <div class="card-body">
@@ -124,7 +124,7 @@ leadership, problem-solving, teamwork, listener, communication.
 
         
       <!--Start of Resume-->
-        <section class="min-vh-100 " id="resume">
+        <section id="resume">
             <h3>Resume</h3>
             <div class="timelines">
                  </div>
@@ -161,9 +161,9 @@ leadership, problem-solving, teamwork, listener, communication.
       <!--End of Resume-->
 
 
-      
-        <section class="min-vh-100 " id="skills">
-          <div class="d-flex">
+       <!--Start of Skills-->
+        <section id="skills">
+          <div class="row">
             <div class="Skills col-md-6">
               <div class="card">
                 <div class="card-body">
@@ -172,7 +172,7 @@ leadership, problem-solving, teamwork, listener, communication.
                 <div class="skills-col">
                     <div class="skills-title">
                       <h3>HTML 70%</h3>
-                        <p>100%</p>
+                        <p></p>
                       </div>
                     <meter value="70" min="0" max="100">2 out of 10</meter>
     
@@ -180,7 +180,7 @@ leadership, problem-solving, teamwork, listener, communication.
                 <div class="skills-col">
                     <div class="skills-title">
                       <h3>CSS 50%</h3>
-                      <p>100%</p>
+                      <p></p>
                     </div>
                     <meter value="50" min="0" max="100">2 out of 10</meter>
     
@@ -188,7 +188,7 @@ leadership, problem-solving, teamwork, listener, communication.
                 <div class="skills-col">
                     <div class="skills-title">
                         <h3>Javascript 20%</h3>
-                        <p>100%</p>
+                        <p></p>
                       </div>
                       <meter value="20" min="0" max="100">2 out of 10</meter>
     
@@ -196,7 +196,7 @@ leadership, problem-solving, teamwork, listener, communication.
                 <div class="skills-col">
                     <div class="skills-title">
                       <h3>VUE 20%</h3>
-                      <p>100%</p>
+                      <p></p>
                     </div>
                     <meter value="20" min="0" max="100">2 out of 10</meter>
                     
@@ -204,7 +204,7 @@ leadership, problem-solving, teamwork, listener, communication.
                 <div class="skills-col">
                   <div class="skills-title">
                     <h3>Node 20%</h3>
-                        <p>100%</p>
+                        <p></p>
                  </div>
                     <meter value="20" min="0" max="100">2 out of 10</meter>
     
@@ -212,7 +212,7 @@ leadership, problem-solving, teamwork, listener, communication.
                 <div class="skills-col">
                     <div class="skills-title">
                       <h3>Data basis 20%</h3>
-                        <p>100%</p>
+                        <p></p>
                       </div>
                       <meter value="20" min="0" max="100">2 out of 10</meter>
     
@@ -250,54 +250,68 @@ leadership, problem-solving, teamwork, listener, communication.
             </div>
           </div>
         </section>
+      <!--End of Skills-->
+      
 
-
-
-        <section class="min-vh-100" id="projects">
+      <!--Start of Projects-->
+        <section id="projects">
           <div class="container-fluid">
             <h2 class="d-flex justify-content-center align-items center">Projects</h2>
             <div class="d-flex flex-wrap">
               <div class="col-md-4">
-                <a href="https://unique-crumble-d487cf.netlify.app" target="_blank">
-                <img src="./images/1st port project.png" alt="project" class="p-image"></a>
+                <img src="./images/1st port project.png" alt="project" class="p-image">
                 <p class="text-center">First Portfolio</p>
+                <div class="project_btn d-flex justify-content-center">
+                  <a href="https://unique-crumble-d487cf.netlify.app"target="_blank"><button>Live</button></a>
+                  <a href="https://github.com/chocomelo24/portfolio.git"target="_blank"><button>Github</button></a>
+                </div>
               </div>
             
               <div class="col-md-4">
-                <a href="https://tiny-cat-8c838b.netlify.app/" target="_blank">
-                <img src="./images/calculator project.png" alt="project" class="p-image"></a>
+                <img src="./images/calculator project.png" alt="project" class="p-image">
                 <p class="text-center">Calculator Project</p>
+                <div class="project_btn d-flex justify-content-center">
+                  <a href="https://tiny-cat-8c838b.netlify.app/"target="_blank"><button>Live</button></a>
+                  <a href="https://github.com/chocomelo24/My-Calculator.git"target="_blank"><button>Github</button></a>
+                </div>
               </div>
             
               <div class="col-md-4">
-                <a href="https://polite-swan-9e70b8.netlify.app/" target="_blank">
-                <img src="./images/holiday project.png" alt="project" class="p-image"></a>
-                <p class="text-center">Holiday Project</p>  
+                <img src="./images/holiday project.png" alt="project" class="p-image">
+                <p class="text-center">Holiday Project</p>
+                <div class="project_btn d-flex justify-content-center">
+                  <a href="https://polite-swan-9e70b8.netlify.app/"target="_blank"><button>Live</button></a>
+                  <a href="https://github.com/chocomelo24/Holiday-destination.git"target="_blank"><button>Github</button></a>
+                </div>  
               </div>
 
               <div class="col-md-4">
-                  <a href="https://spectacular-chimera-f08961.netlify.app" target="_blank">
-                  <img src="./images/restaurant.png" alt="project" class="p-image"></a>
+                  <img src="./images/restaurant.png" alt="project" class="p-image">
                   <p class="text-center">Restaurantly</p>
+                  <div class="project_btn d-flex justify-content-center">
+                    <a href="https://spectacular-chimera-f08961.netlify.app"target="_blank"><button>Live</button></a>
+                    <a href="https://github.com/chocomelo24/Restaurant.git" target="_blank"><button>Github</button></a>
+                  </div>
               </div>
 
               <div class="col-md-4">
-                    <a href="https://dazzling-kitsune-3699f5.netlify.app/" target="_blank">
-                    <img src="./images/mock.png" alt="project" class="p-image"></a>
+                    <img src="./images/mock.png" alt="project" class="p-image">
                     <p class="text-center">Mock Portfolio</p>
+                    <div class="project_btn d-flex justify-content-center">
+                      <a href="https://dazzling-kitsune-3699f5.netlify.app/"target="_blank"><button>Live</button></a>
+                      <a href="https://github.com/chocomelo24/Mock-portfolio.git"target="_blank"><button>Github</button></a>
+                    </div>
               </div>
               
 
               </div>
           </div>
    </section>
+   <!--End of Projects-->
 
 
-
-
-
-
-        <section class="min-vh-100" id="testimonials">
+  <!--Start of Testimonials-->
+        <section id="testimonials">
         <h2 class="d-flex justify-content-center align-items center">Testimonials</h2>
         <div id="carouselExampleCaptions" class="carousel slide row" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -314,19 +328,19 @@ leadership, problem-solving, teamwork, listener, communication.
               </div>
               <div class="carousel-caption ">
                 <h5>Mika</h5>
-                <p>"Chanique is not afraid of seeking clarity with things she does not understand. Although it will take a while for her to get accustomed to new environments, she will be a core part of improving team morale."</p>
+                <p>"Chanique is not afraid of seeking clarity with things she does not understand.She will be a core part of improving team morale."</p>
               </div>
             </div>
-            <div class="carousel-item carousel-padding active">
+            <div class="carousel-item carousel-padding ">
               <div class="d-flex justify-content-center">
                 <img src="./images/jason.jpg" class="jay d-block" alt="Male">
               </div>
               <div class="carousel-caption ">
                 <h5>Jason</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <p>"Chanique is a very kind and social individual who brightens the day of the people she surrounds herself with. She works well with new work and strives to achieve her best in every situation. I wish Chanique the best in her future as a developer."</p>
               </div>
             </div>
-            <div class="carousel-item carousel-padding active">
+            <div class="carousel-item carousel-padding">
               <div class="d-flex justify-content-center">
                 <img src="./images/Cameron (1).JPG" class="cam d-block" alt="Women">
               </div>
@@ -340,7 +354,7 @@ leadership, problem-solving, teamwork, listener, communication.
               <div class="d-flex justify-content-center"><img src="./images/Zachary (2).JPG" class="zach d-block" alt="Male"></div>
               <div class="carousel-caption d-none d-md-block">
                 <h5>Zachary</h5>
-                <p>"Chanique Mansoor is a bright and talented individual, who pushes to improve herself.She has a great sense of humour but remains focused.she will be great attribute in any working environment."</p>
+                <p>"Chanique Mansoor is a bright and talented individual, who pushes to improve herself.She has a great sense of humour.She will be great attribute in any working environment."</p>
               </div>
             </div>
             <div class="carousel-item carousel-padding">
@@ -352,7 +366,7 @@ leadership, problem-solving, teamwork, listener, communication.
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-i2 con" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
@@ -361,18 +375,13 @@ leadership, problem-solving, teamwork, listener, communication.
           </button>
         </div>
         </section>
+      <!--Start of Testimonials-->
 
-
-
-
-
-
-        
-        
-        
-        <section class="min-vh-100 " id="contacts">
+ 
+      <!--Start of Contacts-->
+        <section id="contacts">
           <h2 class="d-flex justify-content-center align-items center">Contacts</h2>
-          <form action="https://formspree.io/f/xnqwgend"
+          <form action="https://formspree.io/f/xnqwgend" target="_blank"
           method="post">
           <div class="row">
             <div class="col-md-6 mb-3">
@@ -397,6 +406,7 @@ leadership, problem-solving, teamwork, listener, communication.
             <button type="submit" class="btn btn-dark">Submit</button>
           </form>
         </section>
+      <!--End of Contacts-->
     
     
     

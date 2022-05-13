@@ -17,7 +17,7 @@
     position: fixed;
     border: 1px solid;
     width: 300px;
-    min-height: 100vh;
+    height: 100%;
     background-color: #040B14;
   }
   .female {
@@ -121,10 +121,15 @@
   }
   
  #content {
-     margin-left: 310px;
+     margin-left: 300px;
  }
 
- 
+ .btn {
+   position: absolute;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+ }
 
   #landing{
       background-image: url(./images/landing-port.gif);
@@ -363,6 +368,11 @@
   padding-top: 20px;
   margin-left: 75px;
 }
+.project_btn button{
+  width: 80px;
+  border-radius: 20px;
+  align-items: center;
+}
 
 .p-image:hover {
   transform:scale(1.2)
@@ -390,6 +400,24 @@
     .carousel-padding{
       padding-bottom: 140px;
     }
+    .carousel-indicators{
+      margin-left: 0%;
+    }
+/* 
+    .carousel-indicators {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin-right: 15%;
+      margin-bottom: 1rem;
+      list-style: none;
+    } */
 
     .mimi{
       width: 300px;
@@ -401,6 +429,8 @@
       height: 400px;
     }
     
+
+
     .zach{
       width: 300px;
       height: 400px;
@@ -441,17 +471,20 @@
 
 
 
-     @media (max-width:565px) {
-         .text h1{
-             font-size: 20px;
-         }
-         .text h2{
-             font-size: 20px;
-         }
+@media screen and (max-width:300px) {
 
-         
-     }
-  
+  #content {
+    margin-left: -75px;
+    margin-right: -310px;
+  }
+ 
+ }
+ @media (max-height: 793px) {
+   #about .container{
+     height: 120vh;
+   }
+ }
+
   
   
   
